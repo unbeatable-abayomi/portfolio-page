@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/css" href="images/logo3.png">
     <script type="text/javascript" src="scripts/all.js"></script>
-  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
  
@@ -24,16 +25,16 @@
        
         <ul class="nav nav-pills nav-justified">
          <li class="nav-item logo-image">
-           <a class="nav-item" href="#footer">
+           <a class="nav-item " href="#footer">
             <img class="my-image" src="./images/logo3.png"  height="40px" width="40px"/>
            </a>
          </li>
         
          <li  class="nav-item">
-          <a href="#project"> Projects</a>
+          <a href="#project" class="nav-item-text"> Projects</a>
          </li>
          <li class="nav-item">
-           <a href="#footer">Contact</a>
+           <a href="#footer" class="nav-item-text">Contact</a>
          </li>
        </ul>
    <div class="row details-about-me">
@@ -46,7 +47,7 @@
                <div class="col-sm-7 my-information">
                   <div class="row">
                         <div class="col-sm-12 welcome-hi">
-                            <h1>Hi!</h1>
+                            <h1  class="welcome-hi-text">Hi!</h1>
                          </div>
                         
                   <div class="col-sm-12 self-description">
@@ -63,8 +64,9 @@
                       
                         
                        
-                    <a href="https://drive.google.com/open?id=19zp6cSp6u2ZS9BAABV7QXE-5Z1Dqt_lf"> <span> 
-                        <i class="far shake-top fa-file-pdf"></i></span>
+                    <a href="https://drive.google.com/open?id=19zp6cSp6u2ZS9BAABV7QXE-5Z1Dqt_lf"> 
+            <i class="far shake-top fa-file-pdf"></i>
+           <i class="resume-text shake-top">resume</i>
                       </a>
                   </div>
                </div>
@@ -75,11 +77,32 @@
               <div class="col-sm-1"></div>
 
               <!-- skill set -->
-              <center><h2 class="skill-set-text">Skill set</h2> </center>
-               
+       <center><h3 class="skill-set-text">Skill set</h3> </center>
+      <div class="skillsSet">
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="skill-set-text-list">
+          <h4>html</h4>
+        </div>
+        <div class="skill-set-text-list">
+          <h4>css</h4>
+        </div>
+        <div class="skill-set-text-list">
+          <h4>git</h4>
+        </div>
+        <div class="skill-set-text-list">
+          <h4>figma</h4>
+        </div>
+        <div class="skill-set-text-list">
+          <h4>react</h4>
+        </div>
+        <div class="skill-set-text-list">
+          <h4>bootstrap</h4>
+        </div>
+        <!-- <div class="col-sm-3"></div> -->
+      </div>         
               
              
-              <div class='row skill-set1'>
+              <!-- <div class='row skill-set1'>
                   <div class="col-sm-4"></div>
                   <div class="col-sm-1 html-div"> 
                         <h4>html</h4>
@@ -103,21 +126,24 @@
 
           </div>
 
-          <!-- <div class="col-sm-1 figma-div">
-                <h3>figma</h3>
-               <i class="fab fa-figma"></i>
-           </div> -->
-
-         
          <div class="col-sm-1 bootstrap-div">
             <h3>bootstrap</h3>
              <i class="fa fa-bold"></i>
                        
        </div>
-         <div class="col-sm-3"></div>
-              </div>
+
          
-              
+         <div class="col-sm-3"></div>
+              </div> -->
+<!--          
+              <center>
+              <div class="design-tool-div">
+                <h3 class="design-tool-text">Design Tool</h3>
+               
+              </div>  
+             
+              </center>
+      <center> <h3 class="design-tool-text figma">figma</h3></center> -->
               <!-- skill set -->
  
  <div id="project" class="projects ">
@@ -126,45 +152,46 @@
 
             <div class="card-deck mt-5" id='container_projects'>
                  <div class="first-project">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card-projects" style="width: 18rem;">
                      <div class="card-body">
                      <img class="card-img-top" src="./images/meal-ingridio.PNG" alt="project">
                      <div class="card-body">
                        <h5 class="card-title">Meal-Ingridio</h5>
-                       <p class="card-text">This is an App that helps you get a list of ingredients needed for a meal.Its uses the Ebedam API to pull it's data</p>
+                       <p class="card-text">This is an App that helps you get a list of ingredients needed for a meal.Its uses the Edamam API to pull it's data</p>
                        <p>Stack: React</p>
-                       <a href="#" class="heartbeat btn btn-primary">View</a>
+                       <a href="https://unbeatable-abayomi.github.io/recipeApp-React-/" class="heartbeat btn btn-primary">View</a>
                      </div>
                   </div>
                    </div>
                  </div>
                  <div class="second-project">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card-projects" style="width: 18rem;">
                      <div class="card-body">
                      <img class="card-img-top" src="./images/weather-spy1.PNG" alt="project">
                      <div class="card-body">
                        <h5 class="card-title">Weather-Spy</h5>
                        <p class="card-text">This App give the user weather condition of a particular city.Its uses the Open Weather Map API to pull data</p>
                        <p>Stack: React</p>
-                       <a href="#" class="shake-bottom btn btn-primary">View</a>
+                       <a href="https://unbeatable-abayomi.github.io/weather-spy-app/" class="shake-bottom btn btn-primary">View</a>
                      </div>
                      </div>
                    </div>
                  </div>
                  <div class="third-project">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card-projects" style="width: 18rem;">
                      <div class="card-body">
-                     <img class="card-img-top" src="./images/SGA web project.jpg" alt="project">
+                     <img class="card-img-top" src="./images/colorinput.PNG" alt="project">
                      <div class="card-body">
-                       <h5 class="card-title">Card title</h5>
-                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                       <a href="#" class="heartbeat btn btn-primary">Go somewhere</a>
+                       <h5 class="card-title">Color Changer App</h5>
+                       <p class="card-text">This App allows the user input a color or an Hexadecimal value in the input box & displays the same color below.</p>
+                       <p>Stack: Vanilla JavaScript</p>
+                       <a href="https://unbeatable-abayomi.github.io/colorChangerApp/" class="heartbeat btn btn-primary">View</a>
                      </div>
                    </div>
                    </div>
                  </div>
                  <div class="fourth-project">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card card-projects" style="width: 18rem;">
                      <div class="card-body">
                      <img class="card-img-top" src="./images/meal-plan.PNG" alt="project">
                      <div class="card-body">
@@ -181,7 +208,7 @@
             <!-- secction 2 skill start -->
             <div class="card-deck mt-5" id='container_projects'>
                 <div class="first-project">
-                 <div class="card" style="width: 18rem;">
+                 <div class="card card-projects" style="width: 18rem;">
                     <div class="card-body">
                     <img class="card-img-top" src="./images/hailingcine.PNG" alt="project">
                     <div class="card-body">
@@ -194,7 +221,7 @@
                   </div>
                 </div>
                 <div class="second-project">
-                 <div class="card" style="width: 18rem;">
+                 <div class="card card-projects" style="width: 18rem;">
                     <div class="card-body">
                     <img class="card-img-top" src="./images/SGA web project.jpg" alt="project">
                     <div class="card-body">
@@ -206,7 +233,7 @@
                   </div>
                 </div>
                 <div class="third-project">
-                 <div class="card" style="width: 18rem;">
+                 <div class="card card-projects" style="width: 18rem;">
                     <div class="card-body">
                     <img class="card-img-top" src="./images/flybetapic.PNG" alt="project">
                     <div class="card-body">
@@ -219,7 +246,7 @@
                   </div>
                 </div>
                 <div class="fourth-project">
-                 <div class="card" style="width: 18rem;">
+                 <div class="card card-projects" style="width: 18rem;">
                     <div class="card-body">
                     <img class="card-img-top" src="./images/facebookClone.PNG" alt="project">
                     <div class="card-body">
@@ -266,7 +293,7 @@
 
         </a>
          
-        <!-- <i class="fab fa-figma"></i> -->
+       
        
        
          

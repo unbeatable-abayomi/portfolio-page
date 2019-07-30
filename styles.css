@@ -111,17 +111,15 @@ a:hover{
     font-size: 2rem;
 }
 
-.query{
-    fill: #d4af37;
-}
-#make-react{
-    fill: #d4af37;
-    width: 58px;
-    height: 49px;
-}
 #container_projects{
     display: flex;
     justify-content: center;
+}
+.design-tool-div{
+  margin-top: 3rem;
+}
+.project-text{
+  margin-top: 3rem;
 }
 
 .fa-bold{
@@ -138,9 +136,7 @@ footer{
     justify-content: center;
     margin: 5rem;
 }
-.fa-hand-point-down{
-    font-size: 20px;    
-}
+
 .fa-linkedin,
 .fa-github,
 .fa-twitter-square,
@@ -154,6 +150,11 @@ footer{
 .fa-file-pdf{
    font-size: 2rem;
 }
+.skillsSet{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 
 .my-image1{
@@ -163,10 +164,99 @@ footer{
 text-align: center;
 
 }
+.welcome-hi-text,
+.design-tool-text,
+.skill-set-text-list,
+.skill-set-text,
+.nav-item-text,
+.project-text{
+  display: inline-block;
+  position: relative;
+}
 
+.design-tool-text::before,
+.skill-set-text-list::before,
+.skill-set-text::before,
+.nav-item-text::before,
+.project-text::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:  #d4af37;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.design-tool-text:hover::before,
+.skill-set-text-list:hover::before,
+.skill-set-text:hover::before,
+.nav-item-text:hover::before,
+.project-text:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.welcome-hi-text::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3.1px;
+  bottom: 0;
+  left: 0;
+  background-color:  #d4af37;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.welcome-hi-text::before{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.figma{
+  margin-top: 1.5rem;
+}
+.resume-text,
+.fa-file-pdf{
+  color: #d4af37;
+}
+.resume-text{
+  font-size: 1.2rem;
+}
 
-  
+.card-projects{
+  transition: 1s;
+  box-shadow: 2px 2px 2px grey;
+}
 
+.card-projects:hover{
+   transform: scale(1.15);
+   background:  #d4af37;
+   box-shadow: 2px 2px 2px #000;
+   z-index: 2;
+   color: #000;
+}
+.fa-github,
+.fa-twitter-square,
+.fa-linkedin,
+.fa-facebook-square,
+.fa-envelope-square,
+.fa-instagram,
+.fa-codepen{
+  transition: 1s;
+}
+.fa-github:hover:hover,
+.fa-twitter-square:hover,
+.fa-linkedin:hover,
+.fa-facebook-square:hover,
+.fa-envelope-square:hover,
+.fa-instagram:hover,
+.fa-codepen:hover{
+  transform: scale(2);
+  z-index: 2;
+  color: #000;
+}
 
 @media (max-width: 1440px){
    
@@ -188,6 +278,13 @@ text-align: center;
 }
 .fa-bold{
     margin-left: 3rem;
+}
+.skill-set-text
+{
+  margin-bottom: 3rem;
+}
+.skill-set1{
+  margin-bottom: 4rem;
 }
 
 
