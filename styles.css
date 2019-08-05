@@ -227,7 +227,7 @@ text-align: center;
 
 .card-projects{
   transition: 1s;
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px #d4af37;
 }
 
 .card-projects:hover{
@@ -246,18 +246,29 @@ text-align: center;
 .fa-codepen{
   transition: 1s;
 }
-.fa-github:hover:hover,
 .fa-twitter-square:hover,
 .fa-linkedin:hover,
-.fa-facebook-square:hover,
-.fa-envelope-square:hover,
+.fa-codepen:hover,
 .fa-instagram:hover,
-.fa-codepen:hover{
+.fa-envelope-square:hover,
+.fa-facebook-square:hover,
+.fa-github:hover{
   transform: scale(2);
   z-index: 2;
-  color: #000;
+  color: #d4af37;
 }
 
+body.night .fa-facebook-square:hover,
+body.night .fa-envelope-square:hover,
+body.night .fa-instagram:hover,
+body.night .fa-codepen:hover,
+body.night .fa-linkedin:hover,
+body.night .fa-twitter-square:hover,
+body.night .fa-github:hover{
+  transform: scale(2);
+  z-index: 2;
+  color: #d4af37;
+}
 @media (max-width: 1440px){
    
     .toggle{
