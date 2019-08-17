@@ -12,6 +12,12 @@ gulp.task('cssnano', function() {
         .pipe(cssnano())
         .pipe(gulp.dest('./mainCss'));
 });
+gulp.task('run', ['scripts','cssnano'])
+gulp.task('watch', ()=>{
+   gulp.watch('./js/*.js', ['scripts'])
+   gulp.watch('./style/*.css', ['cssnano'])
+})
+gulp.task('default', ['run', 'watch'])
 
 
  
